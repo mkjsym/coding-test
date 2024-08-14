@@ -206,15 +206,104 @@
 
 
 #팰린드롬인지 확인하기
-S = input()
+# S = input()
 
-re = len(S) // 2
-print(re)
+# re = len(S) // 2
 
-result = 1
-for i in range(re):
-    if (S[i] != S[-(i+1)]):
-        result = 0
-        break
+# result = 1
+# for i in range(re):
+#     if (S[i] != S[-(i+1)]):
+#         result = 0
+#         break
 
-print(result)
+# print(result)
+
+
+#단어 공부
+# S = input().upper()
+# S_list = list(set(S))
+# cnts = []
+
+# for i in S_list:
+#     cnts.append(S.count(i))
+
+# if cnts.count((max(cnts))) >= 2:
+#     print("?")
+# else:
+#     print(S_list[cnts.index(max(cnts))])
+
+
+#크로아티아 알파벳
+# trans_list = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+
+# S = input()
+
+# for i in trans_list:
+#     S = S.replace(i, "*")
+
+# print(len(S))
+
+
+#그룹 단어 체커
+# N = int(input())
+
+# cnt = 0
+# for i in range(N):
+#     S = input()
+
+#     result = 1
+#     char_list = []
+#     before = ""
+#     for j in S:
+#         if (j not in char_list):
+#             char_list.append(j)
+#         else:
+#             if (before != j):
+#                 result = 0
+#                 break
+#         before = j
+
+#     cnt += result
+
+# print(cnt)
+
+
+#너의 평점은
+# total_time = 0
+# total_grade = 0
+
+# for i in range(20):
+#     name, time, grade = input().split()
+
+#     if (grade == 'A+'):
+#         total_time += float(time)
+#         total_grade += (4.5 * float(time))
+#     elif (grade == "A0"):
+#         total_time += float(time)
+#         total_grade += (4.0 * float(time))
+#     elif (grade == "B+"):
+#         total_time += float(time)
+#         total_grade += (3.5 * float(time))
+#     elif (grade == "B0"):
+#         total_time += float(time)
+#         total_grade += (3.0 * float(time))
+#     elif (grade == "C+"):
+#         total_time += float(time)
+#         total_grade += (2.5 * float(time))
+#     elif (grade == "C0"):
+#         total_time += float(time)
+#         total_grade += (2.0 * float(time))
+#     elif (grade == "D+"):
+#         total_time += float(time)
+#         total_grade += (1.5 * float(time))
+#     elif (grade == "D0"):
+#         total_time += float(time)
+#         total_grade += (1.0 * float(time))
+#     elif (grade == "F"):
+#         total_time += float(time)
+
+# mean = total_grade / (total_time)
+# print(mean)
+
+
+#
