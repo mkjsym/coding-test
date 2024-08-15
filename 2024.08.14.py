@@ -304,6 +304,3 @@
 
 # mean = total_grade / (total_time)
 # print(mean)
-
-
-#
