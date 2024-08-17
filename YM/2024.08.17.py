@@ -40,3 +40,5 @@
 
 
 #진법 변환
+B, N = map(input().split())
+
