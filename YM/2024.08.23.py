@@ -117,4 +117,115 @@
 #     print(i)
 
 
-#
+#백준 27323 직사각형
+# A = int(input())
+# B = int(input())
+
+# print(A * B)
+
+
+#백준 1085 직사각형에서 탈출
+# x, y, w, h = map(int, input().split())
+
+# xp = w-x
+# yp = h-y
+
+# print(min(x, y, xp, yp))
+
+
+#백준 3009 네 번째 점
+# p1_x, p1_y = map(int, input().split())
+# p2_x, p2_y = map(int, input().split())
+# p3_x, p3_y = map(int, input().split())
+
+# x = -1
+# if (p1_x == p2_x):
+#     x = p3_x
+# else:
+#     if (p2_x == p3_x):
+#         x = p1_x
+#     else:
+#         x = p2_x
+
+# y = -1
+# if (p1_y == p2_y):
+#     y = p3_y
+# else:
+#     if (p2_y == p3_y):
+#         y = p1_y
+#     else:
+#         y = p2_y
+
+# print(x, y)
+
+
+#백준 15894 수학은 체육과목 입니다
+# n = int(input())
+
+# dulae = 4 * n
+
+# print(dulae)
+
+
+#백준 9063 대지
+# N = int(input())
+
+# x = []
+# y = []
+# for i in range(N):
+#     a, b = map(int, input().split())
+
+#     x.append(a)
+#     y.append(b)
+
+# print((max(x) - min(x)) * (max(y) - min(y)))
+
+
+#백준 10101 삼각형 외우기
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# if (a + b + c == 180):
+#     if (a == 60 and b == 60 and c == 60):
+#         print('Equilateral')
+#     elif (a == b or a == c or b == c):
+#         print('Isosceles')
+#     else:
+#         print('Scalene')
+# else:
+#     print('Error')
+
+
+#백준 5073 삼각형과 세 변
+# results = []
+# while (1):
+#     a, b, c = map(int, input().split())
+
+#     if (a == 0 and b == 0 and c == 0):
+#         break
+
+#     if (max(a, b, c) < a + b + c - max(a, b, c)):
+#         if (a == b == c):
+#             results.append('Equilateral')
+#         elif (a == b or a == c or b == c):
+#             results.append('Isosceles')
+#         else:
+#             results.append('Scalene')
+#     else:
+#         results.append('Invalid')
+
+# for i in results:
+#     print(i)
+
+
+#백준 14215 세 막대
+# a, b, c = map(int, input().split())
+
+# if (max(a, b, c) >= sum([a + b + c]) - max(a, b, c)):
+#     print(sum([a + b + c]) - max(a, b, c) + sum([a + b + c]) - max(a, b, c) - 1)
+# else:
+#     print(a + b + c)
+
+
+#백준 2798 블랙잭
