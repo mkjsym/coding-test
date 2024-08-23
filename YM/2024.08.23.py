@@ -19,33 +19,55 @@
 
 
 #백준 9506 약수들의 합
-results = []
-while (1):
-    n = int(input())
-    if (n == -1):
-        break
+# results = []
+# while (1):
+#     n = int(input())
+#     if (n == -1):
+#         break
 
-    temp = []
-    i = 1
-    while (i < n):
-        if ((n % i) == 0):
-            temp.append(i)
-        i += 1
+#     temp = []
+#     i = 1
+#     while (i < n):
+#         if ((n % i) == 0):
+#             temp.append(i)
+#         i += 1
     
-    sum = 0
-    for j in temp:
-        sum += j
+#     sum = 0
+#     for j in temp:
+#         sum += j
 
-    if (n == sum):
-        result = str(n) + ' = '
-        for index, j in enumerate(temp):
-            if (index + 1 == len(temp)):
-                result += str(j)
-            else:
-                result += str(j) + ' + '
-        results.append(result)
-    else:
-        results.append(str(n) + ' is NOT perfect.')
+#     if (n == sum):
+#         result = str(n) + ' = '
+#         for index, j in enumerate(temp):
+#             if (index + 1 == len(temp)):
+#                 result += str(j)
+#             else:
+#                 result += str(j) + ' + '
+#         results.append(result)
+#     else:
+#         results.append(str(n) + ' is NOT perfect.')
 
-for i in results:
-    print(i)
+# for i in results:
+#     print(i)
+
+
+#백준 1978 소수 찾기
+# N = int(input())
+
+# nums = list(map(int, input().split()))
+
+# cnt = N
+# for i in range(N):
+#     start = nums[i]
+#     if (start == 1):
+#         cnt -= 1
+#     elif (start > 1):
+#         for j in range(1, start - 1):
+#             if (start % (j + 1) == 0):
+#                 cnt -= 1
+#                 break
+
+# print(cnt)
+
+
+#백준 2581 소수
