@@ -71,3 +71,50 @@
 
 
 #백준 2581 소수
+# def isPrime(a):
+#     if (a < 2):
+#         return False
+#     i = 2
+#     while (i * i <= a):
+#         if (a % i == 0):
+#             return False
+#         i += 1
+#     return True
+
+# M = int(input())
+# N = int(input())
+
+# primes = []
+# for i in range(M, N+1):
+#     if (isPrime(i)):
+#         primes.append(i)
+
+# if (primes == []):
+#     print(-1)
+# else:
+#     print(sum(primes))
+#     print(min(primes))
+
+
+#백준 11653 소인수분해
+# def returnInsu(a):
+#     i = 2
+#     while (i <= a):
+#         if (a % i == 0):
+#             return i
+#         i += 1
+#     return False
+
+# N = int(input())
+
+# nums = []
+# while (returnInsu(N)):
+#     insu = returnInsu(N)
+#     nums.append(insu)
+#     N = N / insu
+
+# for i in nums:
+#     print(i)
+
+
+#
