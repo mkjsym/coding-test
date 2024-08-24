@@ -75,7 +75,7 @@ package SY;
 
 
 
-/****** 24262. 알고리즘의 수행시간2 *******/
+/****** 24263. 알고리즘의 수행시간2 *******/
 //import java.io.BufferedReader;
 //import java.io.InputStreamReader;
 //
@@ -91,7 +91,7 @@ package SY;
 
 
 
-/****** 24262. 알고리즘의 수행시간3 *******/
+/****** 24264. 알고리즘의 수행시간3 *******/
 //import java.io.BufferedReader;
 //import java.io.InputStreamReader;
 //
@@ -107,7 +107,7 @@ package SY;
 
 
 
-/****** 24262. 알고리즘의 수행시간4 *******/
+/****** 24265. 알고리즘의 수행시간4 *******/
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
