@@ -17,5 +17,3 @@
 N, B = map(int, input().split())
 
 result = ""
-while(N > 0):
-    
