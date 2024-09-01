@@ -33,3 +33,27 @@ print(len(S))
     for 열:
         for 헹:
     구조로 반복을 수행.
+    열의 반복자 i보다 문자열의 길이가 더 길경우 행렬[j][i] 출력.
+
+코드:
+```python
+matrix = []
+
+for i in range(5):
+    matrix.append(input())
+
+result = []
+for i in range(15):
+    for j in range(5):
+        if (i < len(matrix[j])):
+            result.append(matrix[j][i])
+
+for i in result:
+    print(i, end="")
+```
+***
+### 백준 11005 진법 변환 2
+
+문제 설명:
+
+    
