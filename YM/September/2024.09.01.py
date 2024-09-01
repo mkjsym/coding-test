@@ -53,7 +53,7 @@
 # print(result)
 
 
-#백준 11651 좌표 정렬하기 2
+#백준 11651 좌표 정렬하기 2#########################
 # import sys
 
 # N = int(sys.stdin.readline())
@@ -63,6 +63,7 @@
 #     x, y = map(int, sys.stdin.readline().split())
 #     coords.append([x, y])
 
+#key를 활용한 람다식 사용. 파이썬 람다식 사용법을 공부하자
 # coords.sort(key = lambda x: (x[1], x[0]))
 
 # for i in coords:
