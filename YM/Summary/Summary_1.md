@@ -273,4 +273,129 @@ for i in nums:
 
 2. 풀이 방법:
 
-    
+    ```python
+    while (X > end):
+        line += 1
+        end += line
+    ```
+    위와 같이 반복문을 통해 X 번째 수가 속한 line의 위치와 해당 라인의 가장 마지막 원소를 찾는다.
+    가장 마지막 원소와 찾고자 하는 값 X의 차를 구하여 해당 라인에서 몇 번째 값을 구해야 하는지 찾는다.
+    해당 라인이 홀수 번째 라인인지 짝수 번째 라인인지 검사한 후 결과를 출력한다.
+
+3. 코드:
+```python
+X = int(input())
+
+end = 0
+line = 0
+while (X > end):
+    line += 1
+    end += line
+
+diff = end - X
+
+x = 0
+y = 0
+if (line % 2 != 0):
+    y = line - diff
+    x = line + 1 - y
+else:
+    x = line - diff
+    y = line + 1 - x
+
+print(str(x) + '/' + str(y))
+```
+***
+### 백준 7785 회사에 있는사람
+
+1. 문제 설명:
+
+    사람의 이름과 "enter" 혹은 "leave"가 주어질 때, 현재 회사에 남이있는 사람들의 이름을 출력하는 문제
+
+2. 풀이 방법:
+
+    파이썬에서 데이터 집합에 값을 추가할 때 list.append()를 사용하는 것 보다
+    set.add()를 사용하는 것이 속도가 더 빠르다.
+    정렬 함수는 리스트와 셋 모두 .sort()를 사용할 수 있다.
+
+3. 코드:
+```python
+N = int(input())
+
+chars = set()
+for i in range(N):
+    name, stat = map(str, input().split())
+    if (stat == 'enter'):
+        chars.add(name)
+    else:
+        chars.remove(name)
+
+chars = list(chars)
+chars.sort(reverse = True)
+
+for i in chars:
+    print(i)
+```
+***
+### 백준 2751 수 정렬하기 2
+
+1. 문제 설명:
+
+    수의 개수 N(1 ≤ N ≤ 1,000,000)이 주어질 때 이를 오름차순 정렬하여 출력하는 문제
+    메모리 제한은 까다롭지 않으나 수행 시간의 제한이 2초.
+    값의 중복은 없다.
+
+2. 풀이 방법:
+
+    먼저 키보드 입력을 받을 때 input() 함수를 사용하지 않고 sys 라이브러리를 import 하여 sys.stdin.readline() 함수를 사용한다. -> 시간 단축
+    입력값의 중복이 없다고 하였으니 set 자료형을 사용하여 값을 저장한다. -> 시간 단축
+    set.sort() 함수를 사용하여 Tim Sort 알고리즘으로 정렬을 수행한다.
+
+3. 코드:
+```python
+import sys
+
+N = int(input())
+
+nums = set()
+for _ in range(N):
+    nums.add(int(sys.stdin.readline()))
+
+nums = list(nums)
+nums.sort()
+
+for i in nums:
+    print(i)
+```
+***
+### 백준 10989 수 정렬하기 3
+
+1. 문제 설명:
+
+    수의 개수 N(1 ≤ N ≤ 10,000,000)이 주어질 때 이를 오름차순 정렬하여 출력하는 문제
+    수행 시간의 제한이 까다롭지는 않으나 메모리 제한이 8MB이다.
+    값의 범위는 10,000보다 작거나 같은 수.
+
+2. 풀이 방법:
+
+    계수 정렬을 구현하여 정렬을 수행.
+    처음에 값의 범위 + 1 만큼의 배열 공간을 생성한 뒤, 입력받은 값의 index에 해당하는 배열의 값을 1 증가시킨다.
+    배열의 원소 값이 0이 아닌 모든 인덱스들에 대하여 해당 배열의 값(ex. nums[17] = 5 -> 5번 반복)만큼 반복하며 해당 인덱스를 출력.
+    정렬된 값을 출력하는 효과를 보인다.
+
+3. 코드:
+```python
+import sys
+N = int(input())
+
+nums = [0] * (10001)
+
+for _ in range(N):
+    nums[int(sys.stdin.readline())] += 1
+
+for i in range(len(nums)):
+    if (nums[i] != 0):
+        for _ in range(nums[i]):
+            print(i)
+```
+***
