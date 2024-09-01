@@ -141,6 +141,7 @@ for i in results:
 
 1. 문제 설명: 
 
+    ```
     MenOfPassion(A[], n) {
     sum <- 0;
     for i <- 1 to n - 2
@@ -149,6 +150,7 @@ for i in results:
                 sum <- sum + A[i] × A[j] × A[k]; # 코드1
     return sum;
     }
+    ```
     위 알고리즘의 시간복잡도를 구하여 출력하는 문제
 
 2. 풀이 방법:
@@ -177,4 +179,3 @@ print(3)
 
 2. 풀이 방법:
 
-    
