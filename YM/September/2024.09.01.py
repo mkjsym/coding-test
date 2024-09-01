@@ -29,4 +29,44 @@
 # print(result)
 
 
-#백준 11650 좌표 정렬하기
+#백준 11650 좌표 정렬하기###########################
+# import sys
+
+# N = int(sys.stdin.readline())
+
+# cords = []
+# for _ in range(N):
+#     x, y = map(int, sys.stdin.readline().split())
+
+#     cords.append([x, y])
+
+# cords.sort()
+
+# for i in cords:
+#     print(i[0], i[1])
+
+#아래같은 방법은 시간초과가 떴다.. 왜지?
+# result = ""
+# for i in cords:
+#     result = result + i[0] + ' ' + i[1] + '\n'
+
+# print(result)
+
+
+#백준 11651 좌표 정렬하기 2
+# import sys
+
+# N = int(sys.stdin.readline())
+
+# coords = []
+# for _ in range(N):
+#     x, y = map(int, sys.stdin.readline().split())
+#     coords.append([x, y])
+
+# coords.sort(key = lambda x: (x[1], x[0]))
+
+# for i in coords:
+#     print(i[0], i[1])
+
+
+#
