@@ -100,3 +100,81 @@ for i in range(len(digits)):
 
 2. 풀이 방법:
 
+    enumerate(열거형)을 사용하여 반복.
+    enumerate: 반복 가능한 자료형의 index, index 번째 원소를 리턴
+
+3. 코드:
+```python
+results = []
+while (1):
+    n = int(input())
+    if (n == -1):
+        break
+
+    temp = []
+    i = 1
+    while (i < n):
+        if ((n % i) == 0):
+            temp.append(i)
+        i += 1
+    
+    sum = 0
+    for j in temp:
+        sum += j
+
+    if (n == sum):
+        result = str(n) + ' = '
+        for index, j in enumerate(temp):
+            if (index + 1 == len(temp)):
+                result += str(j)
+            else:
+                result += str(j) + ' + '
+        results.append(result)
+    else:
+        results.append(str(n) + ' is NOT perfect.')
+
+for i in results:
+    print(i)
+```
+***
+### 백준 24267 알고리즘 수업 - 알고리즘의 수행 시간 6
+
+1. 문제 설명: 
+
+    MenOfPassion(A[], n) {
+    sum <- 0;
+    for i <- 1 to n - 2
+        for j <- i + 1 to n - 1
+            for k <- j + 1 to n
+                sum <- sum + A[i] × A[j] × A[k]; # 코드1
+    return sum;
+    }
+    위 알고리즘의 시간복잡도를 구하여 출력하는 문제
+
+2. 풀이 방법:
+
+    3중 for문으로 구성된 함수의 시간 복잡도를 구하는 문제.
+    다중 시그마 공식을 사용하여 풀어야 한다.
+    3개의 반복문 식(시그마)을 간단히 하면 -> n * (n - 1) * (n - 2) / 6
+
+3. 코드:
+```python
+n = int(input())
+
+result = n * (n - 1) * (n - 2) // 6
+
+print(result)
+print(3)
+```
+***
+### 백준 24313 알고리즘 수업 - 점근적 표기 1
+
+1. 문제 설명:
+
+    O(g(n)) = {f(n) | 모든 n ≥ n0에 대하여 f(n) ≤ c × g(n)인 양의 상수 c와 n0가 존재한다}
+    위와 같은 시간 복잡도 표기법(빅 오 표기법)이 존재한다고 하자.
+    함수 f(n) = a1n + a0, 양의 정수 c, n0가 주어질 경우 O(n) 정의를 만족하는지 알아보자.
+
+2. 풀이 방법:
+
+    
