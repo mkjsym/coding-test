@@ -31,7 +31,7 @@ print(len(S))
 2. 풀이 방법:
 
     for 열:
-        for 헹:
+        for 행:
     구조로 반복을 수행.
     열의 반복자 i보다 문자열의 길이가 더 길경우 행렬[j][i] 출력.
 
@@ -179,3 +179,98 @@ print(3)
 
 2. 풀이 방법:
 
+    단순하게 a1 * n0 + a0 <= c * n0 조건을 검사하여 해결한다.
+    그러나 a1과 c의 값이 음수일 경우를 따로 고려해야 한다.
+    따라서 a1 * n0 + a0 <= c * n0 조건과 a1 <= c 조건을 and로 묶어 검사하여 답을 출력한다.
+
+3. 코드:
+```python
+a1, a0 = map(int, input().split())
+c = int(input())
+n0 = int(input())
+
+if (a1 * n0 + a0 <= c * n0 and a1 <= c):
+    print(1)
+else:
+    print(0)
+```
+***
+### 백준 2798 블랙잭
+
+1. 문제 설명: 
+
+    N장의 카드가 주어졌을 때, M을 넘지 않으면서 M에 가장 가까운 3장의 카드 조합을 찾는 문제
+
+2. 풀이 방법:
+
+    브루트 포스 방식을 사용하여 전수조사하여 답을 찾는다.
+    n * (n - 1) * (n - 2)와 같이 반복을 수행하여 중복을 허용하지 않고 3장의 카드를 고르는 모든 경우의 수를 검사한다.
+    모든 경우의 수 중에서 M과 같거나 M보다 작은 경우들을 전부 저장한다.
+    저장된 값들 중 가장 큰 값을 출력한다.
+
+3. 코드:
+```python
+N, M = map(int, input().split())
+cards = list(map(int, input().split()))
+
+result = 0
+for i in range(N):
+    for j in range(i + 1, N):
+        for k in range(j + 1, N):
+            temp = cards[i] + cards[j] + cards[k]
+
+            if (temp <= M):
+                result = max(temp, result)
+
+print(result)
+```
+***
+### 백준 2750 수 정렬하기
+
+1. 문제 설명:
+
+    N개의 수가 주어졌을 때 오름차순 정렬하여 출력하는 문제
+
+2. 풀이 방법:
+
+    선택 정렬 알고리즘을 구현하여 해결.
+    선택 정렬의 시간 복잡도는 최선, 평균, 최악의 경우 모두 N^2이다.
+    효율적이진 않지만 머릿속에 가장 먼저 떠오른 정렬 알고리즘이었다.
+
+3. 코드:
+```python
+def minNum(numList):
+    minNum = numList[0]
+    minIndex = 0
+    for i in range(1, len(numList)):
+        if (minNum > numList[i]):
+            minNum = numList[i]
+            minIndex = i
+
+    return minIndex
+
+N = int(input())
+
+nums = []
+for i in range(N):
+    nums.append(int(input()))
+
+for i in range(N):
+    idx = minNum(nums[i:])
+    temp = nums[i]
+    nums[i] = nums[i+idx]
+    nums[i+idx] = temp
+
+for i in nums:
+    print(i)
+```
+***
+### 백준 1193 분수찾기
+
+1. 문제 설명:
+
+    X가 주어졌을 때 1/1 → 1/2 → 2/1 → 3/1 → 2/2 → … 과 같은 지그재그 순서로 X 번째 분수를 찾는 문제
+
+2. 풀이 방법:
+
+    
