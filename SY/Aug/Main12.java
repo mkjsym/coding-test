@@ -1,5 +1,5 @@
 // 2024.08.29
-package SY;
+package SY.Aug;
 
 /******* 2751. 수 정렬하기 2 ********/
 import java.io.BufferedReader;

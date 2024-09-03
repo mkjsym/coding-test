@@ -1,5 +1,5 @@
 // 2024.08.22
-package SY;
+package SY.Aug;
 
 /********** 1193. 분수찾기 ***********/
 //import java.io.BufferedReader;

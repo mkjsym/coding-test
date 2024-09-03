@@ -1,5 +1,5 @@
 // 2024.08.26
-package SY;
+package SY.Aug;
 
 /************* 1018. 체스판 다시 칠하기 *************/
 //import java.io.BufferedReader;

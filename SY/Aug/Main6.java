@@ -1,5 +1,5 @@
 // 2024.08.23
-package SY;
+package SY.Aug;
 
 /************ 9063. 대지 *************/
 //import java.io.BufferedReader;

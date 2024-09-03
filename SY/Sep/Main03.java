@@ -1,7 +1,7 @@
 // 2024.09.03
-package SY;
+package SY.Sep;
 
-/**************** 18870. 백준 ****************/
+/**************** 18870. 좌표압축 ****************/
 /*
  * TreeMap(정렬된 map) 이용 : 중복제거+정렬
  */
@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 
-public class Main17 {
+public class Main03 {
 	public static void main(String [] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
