@@ -1,5 +1,5 @@
 // 2024.08.28
-package SY;
+package SY.Aug;
 
 /**** 2587. 대표값2 ****/
 //import java.io.BufferedReader;

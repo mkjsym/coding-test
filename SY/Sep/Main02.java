@@ -1,5 +1,5 @@
 // 2024.09.02
-package SY;
+package SY.Sep;
 
 /************** 7785. 회사에 있는 사람 **************/
 /*
@@ -13,7 +13,7 @@ package SY;
 //import java.util.Map;
 //import java.util.StringTokenizer;
 //
-//public class Main16 {
+//public class Main02 {
 //	public static void main(String [] args) throws Exception {
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //		StringBuilder sb = new StringBuilder();
@@ -52,7 +52,7 @@ import java.util.LinkedHashMap;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
 
-public class Main16 {
+public class Main02 {
 	public static void main(String [] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();

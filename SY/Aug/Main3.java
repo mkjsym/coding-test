@@ -1,5 +1,5 @@
 // 2024.08.20
-package SY;
+package SY.Aug;
 
 /***************** 2563. 색종이 *******************/
 //import java.io.BufferedReader;

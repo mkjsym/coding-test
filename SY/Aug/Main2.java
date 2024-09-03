@@ -1,5 +1,5 @@
 // 2024.08.19
-package SY;
+package SY.Aug;
 
 /************** 1157. 단어공부 *****************/
 //import java.io.BufferedReader;

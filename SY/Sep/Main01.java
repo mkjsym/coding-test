@@ -1,5 +1,5 @@
 // 2024.09.01
-package SY;
+package SY.Sep;
 
 /************* 10814. 나이순정렬 **************/
 //import java.io.BufferedReader;
@@ -7,7 +7,7 @@ package SY;
 //import java.util.Arrays;
 //import java.util.StringTokenizer;
 //
-//public class Main15 {
+//public class Main01 {
 //	public static void main(String [] args) throws Exception {
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //		StringBuilder sb = new StringBuilder();
@@ -44,7 +44,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.HashMap;
 
-public class Main15 {
+public class Main01 {
 	public static void main(String [] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		HashMap <String, Boolean> map = new HashMap<>();

@@ -1,5 +1,5 @@
 // 2024.08.31
-package SY;
+package SY.Aug;
 
 /************** 11650. 좌표정렬하기 ***************/
 //import java.io.BufferedReader;

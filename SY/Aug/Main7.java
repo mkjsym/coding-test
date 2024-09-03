@@ -1,5 +1,5 @@
 // 2024.08.24
-package SY;
+package SY.Aug;
 
 /************** 2798. 블랙잭 **************/
 //import java.io.BufferedReader;

@@ -1,5 +1,5 @@
 // 2024.08.25
-package SY;
+package SY.Aug;
 
 /********** 24266. 알고리즘의 수행 시간 5 **********/
 //import java.io.BufferedReader;

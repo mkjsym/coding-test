@@ -1,5 +1,5 @@
 // 2024.08.27
-package SY;
+package SY.Aug;
 
 /********** 2839. 설탕배달 ************/
 //import java.io.BufferedReader;
