@@ -45,12 +45,12 @@
 # for i in cords:
 #     print(i[0], i[1])
 
-#아래같은 방법은 시간초과가 떴다.. 왜지?
-# result = ""
-# for i in cords:
-#     result = result + i[0] + ' ' + i[1] + '\n'
+# #아래같은 방법은 시간초과가 떴다.. 왜지?
+# # result = ""
+# # for i in cords:
+# #     result = result + i[0] + ' ' + i[1] + '\n'
 
-# print(result)
+# # print(result)
 
 
 #백준 11651 좌표 정렬하기 2#########################
