@@ -28,7 +28,6 @@ public class Main11 {
 						break;
 					}
 				}
-					
 			}
 			// 2. 스택에 남아있는 문자가 있으면 VPS 아님
 			if(!stack.isEmpty()) sb.append("NO");
