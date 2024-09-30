@@ -1,7 +1,7 @@
 // 2024.09.30
 package SY.Sep;
 
-/******** 15651. N과 M (2) *********/
+/******** 15650. N과 M (2) *********/
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
