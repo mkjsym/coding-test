@@ -16,7 +16,7 @@ import os
 
 from tqdm import tqdm
 
-data=pd.read_csv('Python/flickr8k/captions.txt')
+data=pd.read_csv('flickr8k/captions.txt')
 data.head()
 
 # GPU 설정
@@ -42,8 +42,8 @@ def normalizeString(s):
     # "!", "," or "?" with a single space character.
     return sres.strip()
 
-capt_file_path='Python/flickr8k/captions.txt'
-images_dir_path='Python/flickr8k/Images/'
+capt_file_path='flickr8k/captions.txt'
+images_dir_path='flickr8k/Images/'
 
 #read data
 data=open(capt_file_path).read().strip().split('\n')
