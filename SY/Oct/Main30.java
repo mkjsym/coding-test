@@ -23,7 +23,6 @@ public class Main30 {
 		// stars() 재귀호출-> 더 작은 부분으로 분할하기
 		for(int i=0; i<3; i++) {
 			for(int j=0; j<3; j++) {
-				
 				if(i==1 && j==1) {
 					continue;
 				}
@@ -34,6 +33,7 @@ public class Main30 {
 	}
 	public static void main(String [] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine());
 		star = new char[N][N];
 		for(int i=0; i<N; i++) {
@@ -46,9 +46,10 @@ public class Main30 {
 		// 출력
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<N; j++) {
-				System.out.print(star[i][j]);
+				sb.append(star[i][j]);
 			}
-			System.out.println();
+			sb.append("\n");
 		}
+		System.out.println(sb);
 	}
 }
