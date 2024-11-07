@@ -3,14 +3,13 @@ package SY.Nov;
 
 /****** 11444. 피보나치 수 6 *******/
 /*
- * 피보나치수 점화식을 행렬로 만들기-> {{1,1},{1,0}}^(n-1)하면 n번째 피보나치수 알 수 있음([0,0]) 
+ * 피보나치수 점화식을 행렬로 만들기-> {{1,1},{1,0}}^n하면 n번째 피보나치수 알 수 있음([0,1]) 
  */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Main07 {
-	static long A[][];
-	static long N;
+	static long A[][] = {{1,1},{1,0}};
 	static long mod = 1000000007;
 	
 	// 분할함수
@@ -42,10 +41,9 @@ public class Main07 {
 	
 	public static void main(String [] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		N = Long.parseLong(br.readLine());
-		A = new long[][] {{1,1},{1,0}};
+		long N = Long.parseLong(br.readLine());
 		
-		long[][] result = Divide(N-1);
-		System.out.println(result[0][0]);
+		long result = Divide(N)[0][1];
+		System.out.println(result);
 	}
 }
