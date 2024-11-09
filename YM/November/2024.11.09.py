@@ -9,8 +9,6 @@ a.sort()
 b = list(map(int, input().split()))
 b.sort(reverse = True)
 
-print(a, b)
-
 sum = 0
 for i in range(N):
     sum += a[i] * b[i]
