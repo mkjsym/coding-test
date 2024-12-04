@@ -1,8 +1,10 @@
+// 2024.12.04
 package SY.Dec;
 
 /******** 12852. 1로 만들기 2 ********/
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.*;
 
 public class Main04 {
 	public static void main(String [] args) throws Exception {
@@ -39,6 +41,9 @@ public class Main04 {
 	}
 }
 
+
+
+/****** 큰수의법칙 *******/
 //public class Main04 {
 //	public static void main(String [] args) throws Exception {
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -66,7 +71,7 @@ public class Main04 {
 
 
 
-
+/****** 숫자카드게임 *******/
 //public class Main04 {
 //	public static void main(String [] args) throws Exception {
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -86,35 +91,5 @@ public class Main04 {
 //			max = Math.max(max, min);
 //		}
 //		System.out.println(max);
-//	}
-//}
-
-
-
-//public class Main04 {
-//	public static void main(String [] args) throws Exception {
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		StringTokenizer st = new StringTokenizer(br.readLine());
-//		int N = Integer.parseInt(st.nextToken());
-//		int K = Integer.parseInt(st.nextToken());
-////		int cnt = 0;
-////		// 1로 빼야하는 횟수 = N%K
-////		while(N>1) {
-////			int first = N%K;
-////			if(first == 0) {
-////				N/=K;
-////				cnt++;
-////			}
-////			else {
-////				N -= first;
-////				cnt += first;
-////			}
-////		}
-////		System.out.println(cnt);
-//		
-//		int cnt = N%K;
-//		int target = N/K;
-//		
-//		System.out.println(cnt + target + 1);
 //	}
 //}
