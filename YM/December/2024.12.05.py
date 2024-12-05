@@ -1,4 +1,4 @@
-#백준 1009 분산처리
+#백준 1009 분산처리########################################################
 import sys 
 input = sys.stdin.readline
 
@@ -20,7 +20,7 @@ for _ in range(t):
         if b % 4 == 0:
             print(base ** 4 % 10)
         else:
-            print(base ** (b % 4) % 10) 
+            print(base ** (b % 4) % 10)
 
 #이렇게 짜니까 시간 초과....
 # import sys
