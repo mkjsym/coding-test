@@ -4,48 +4,48 @@ package SY.Dec;
 import java.util.*;
 
 /****** 프로그래머스 - 실패율 ******/
-class Solution {
-    public int[] solution(int N, int[] stages) {
-        int[] answer = {};
-        int fail[] = new int[N+2];  // 도달했지만 실패한 유저 수
-        int achieve[] = new int[N+1];   // statge별 총 도달유저 수
-        double result[][] = new double[N][2]; // 실패율
-        
-        Arrays.sort(stages);
-        
-        // 도달했지만 실패한 유저 수++
-        for(int i: stages){
-            if(i<=N){
-                fail[i]++;
-            }
-        }
-        // 스테이지별 총 도달유저 수
-        int total = stages.length;
-        for(int i=1; i<=N; i++){
-            achieve[i] = total;
-            total -= fail[i];
-        }
-        
-        // 스테이지별 실패율
-        for(int i=1; i<=N; i++){
-            result[i-1][0] = (achieve[i]==0) ? 0.0 : fail[i]/(double)achieve[i];
-            result[i-1][1] = i;
-        }
-
-        // 정렬
-        Arrays.sort(result, (o1, o2)->{
-            if(o1[0]==o2[0]){
-                return Double.compare(o1[1],o2[1]);
-            }
-            return Double.compare(o2[0],o1[0]);
-        });
-        
-        answer = new int[N];
-        for(int i=0; i<N; i++)
-            answer[i] = (int)result[i][1];
-        return answer;
-    }
-}
+//class Solution {
+//    public int[] solution(int N, int[] stages) {
+//        int[] answer = {};
+//        int fail[] = new int[N+2];  // 도달했지만 실패한 유저 수
+//        int achieve[] = new int[N+1];   // statge별 총 도달유저 수
+//        double result[][] = new double[N][2]; // 실패율
+//        
+//        Arrays.sort(stages);
+//        
+//        // 도달했지만 실패한 유저 수++
+//        for(int i: stages){
+//            if(i<=N){
+//                fail[i]++;
+//            }
+//        }
+//        // 스테이지별 총 도달유저 수
+//        int total = stages.length;
+//        for(int i=1; i<=N; i++){
+//            achieve[i] = total;
+//            total -= fail[i];
+//        }
+//        
+//        // 스테이지별 실패율
+//        for(int i=1; i<=N; i++){
+//            result[i-1][0] = (achieve[i]==0) ? 0.0 : fail[i]/(double)achieve[i];
+//            result[i-1][1] = i;
+//        }
+//
+//        // 정렬
+//        Arrays.sort(result, (o1, o2)->{
+//            if(o1[0]==o2[0]){
+//                return Double.compare(o1[1],o2[1]);
+//            }
+//            return Double.compare(o2[0],o1[0]);
+//        });
+//        
+//        answer = new int[N];
+//        for(int i=0; i<N; i++)
+//            answer[i] = (int)result[i][1];
+//        return answer;
+//    }
+//}
 
 /******* 프로그래머스 - 동영상재생기 *******/
 //class Solution {
