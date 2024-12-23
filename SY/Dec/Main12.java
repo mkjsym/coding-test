@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-/********* 1697. 숨바꼭질 **********/
+/********* 1697. 미로탐색 **********/
 public class Main12 {
 	static int[][] graph;
 	static Queue<int[]> que = new LinkedList<>();
